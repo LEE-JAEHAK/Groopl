@@ -5,10 +5,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
-    tools:context=".GroupActivity">
+    tools:context=".Group">
 
     <TextView
-        android:id="@+id/tv_home_name"
+        android:id="@+id/tv_group_username"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="64dp"
@@ -30,10 +30,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.071"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_home_name" />
+        app:layout_constraintTop_toBottomOf="@+id/tv_group_username" />
 
     <FrameLayout
-        android:id="@+id/fl_home"
+        android:id="@+id/fl_group_pic"
         android:layout_width="0dp"
         android:layout_height="360dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -45,10 +45,10 @@
         app:layout_constraintWidth_percent="0.9">
 
         <ImageView
-            android:id="@+id/iv_home_image"
+            android:id="@+id/iv_group_pic"
             android:layout_width="match_parent"
             android:layout_height="359dp"
-            android:background="@drawable/round_border" />
+            android:background="@drawable/round_border"/>
 
         <TextView
             android:id="@+id/textView7"
@@ -62,22 +62,24 @@
     </FrameLayout>
 
     <Button
-        android:id="@+id/btn_home_create"
+        android:id="@+id/btn_group_create"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
         android:background="@drawable/round_border_button"
         android:text="그룹생성"
         android:textColor="@color/white"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/view"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/fl_home"
         app:layout_constraintWidth_percent="0.9" />
 
-    <view
+    <View
+        android:id="@+id/view"
         android:layout_width="match_parent"
         android:layout_height="1dp"
-        android:background="@color/black"
+        android:background="@android:color/darker_gray"
         app:layout_constraintBottom_toTopOf="@+id/icon_home"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -86,6 +88,7 @@
         android:id="@+id/icon_home"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@color/white"
         android:padding="5dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
