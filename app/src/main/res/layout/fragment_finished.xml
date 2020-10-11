@@ -28,7 +28,32 @@
                 tools:layout_editor_absoluteX="16dp"
                 tools:layout_editor_absoluteY="28dp" />
 
+            <TextView
+                android:id="@+id/tv_finished_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="25dp"
+                android:text="2020. 10. 30 - 11.03"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                app:layout_constraintBottom_toTopOf="@+id/tv_finished_title"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.08"
+                app:layout_constraintStart_toEndOf="@+id/tv_finished_dday" />
 
+            <TextView
+                android:id="@+id/tv_finished_dday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/round_border_bordered_white"
+                android:padding="5dp"
+                android:text=" D-30 "
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                app:layout_constraintBottom_toTopOf="@+id/tv_finished_title"
+                app:layout_constraintStart_toStartOf="parent" />
             <TextView
                 android:id="@+id/tv_finished_title"
                 android:layout_width="wrap_content"
@@ -80,6 +105,18 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.056"
                 app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_finished_date2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:text="2020. 10. 30 - 11.03"
+                android:textColor="@color/white"
+                android:textSize="13sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_finished_friends" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 

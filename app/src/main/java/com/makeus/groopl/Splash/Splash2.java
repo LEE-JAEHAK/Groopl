@@ -1,12 +1,12 @@
 package com.makeus.groopl.Splash;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 
-import com.makeus.groopl.LoginActivity;
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.makeus.groopl.R;
+import com.makeus.groopl.login.LoginActivity;
 
 public class Splash2 extends AppCompatActivity {
 

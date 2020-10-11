@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/round_border_white"
+    android:padding="25dp">
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:text="목표 생성"
+        android:textColor="@android:color/darker_gray"
+        app:layout_constraintBottom_toTopOf="@+id/tv_bs2_goalname"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <TextView
+        android:id="@+id/tv8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="32dp"
+        android:text="목표 이름"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/tv9"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/tv_bs2_goalname"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/round_border_bordered"
+        android:padding="3dp"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/tv_bs2_contents"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.741"
+        app:layout_constraintStart_toEndOf="@+id/tv8"
+        app:layout_constraintWidth_percent="0.7" />
+
+    <TextView
+        android:id="@+id/tv9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="32dp"
+        android:text="내용"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/tv10"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/tv_bs2_contents"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/round_border_bordered"
+        android:padding="3dp"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/tv_bs2_startdate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.824"
+        app:layout_constraintStart_toEndOf="@+id/tv9"
+        app:layout_constraintWidth_percent="0.7" />
+
+    <TextView
+        android:id="@+id/tv10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="32dp"
+        android:text="시작일"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/tv11"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/tv_bs2_startdate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/round_border_bordered"
+        android:padding="3dp"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/tv_bs2_enddate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.794"
+        app:layout_constraintStart_toEndOf="@+id/tv10"
+        app:layout_constraintWidth_percent="0.7" />
+
+    <TextView
+        android:id="@+id/tv11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="28dp"
+        android:text="종료일"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/btn_suggest_cancel"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/tv_bs2_enddate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/round_border_bordered"
+        android:padding="3dp"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/btn_suggest_cancel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.794"
+        app:layout_constraintStart_toEndOf="@+id/tv11"
+        app:layout_constraintWidth_percent="0.7" />
+
+    <Button
+        android:id="@+id/btn_suggest_cancel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/round_border"
+        android:text="취소"
+        app:layout_constraintBottom_toTopOf="@+id/btn_suggest_submit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintWidth_percent="0.9" />
+
+    <Button
+        android:id="@+id/btn_suggest_submit"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/round_border_blue"
+        android:text="완료"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintWidth_percent="0.9" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

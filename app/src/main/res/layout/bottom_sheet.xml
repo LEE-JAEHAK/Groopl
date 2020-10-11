@@ -5,20 +5,18 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/round_border_white"
-    android:padding="20dp"
-    tools:context=".Bottomsheet">
+    android:padding="25dp">
 
     <TextView
         android:id="@+id/textView9"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:layout_marginBottom="20dp"
+        android:layout_marginBottom="50dp"
         android:text="그룹 생성"
         android:textColor="@android:color/darker_gray"
         app:layout_constraintBottom_toTopOf="@+id/textView8"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.056"
+        app:layout_constraintHorizontal_bias="0.05"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
@@ -26,23 +24,23 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
-        android:layout_marginBottom="208dp"
+        android:layout_marginBottom="200dp"
         android:text="그룹 이름"
         android:textColor="@color/black"
         app:layout_constraintBottom_toTopOf="@+id/button2"
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
-        android:id="@+id/tv_bs_groupname"
+        android:id="@+id/et_bs_groupname"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="212dp"
+        android:layout_marginBottom="196dp"
         android:background="@drawable/round_border_bordered"
         android:padding="3dp"
-        android:textColorHint="@android:color/darker_gray"
+        android:textColor="@color/black"
         app:layout_constraintBottom_toTopOf="@+id/button2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintHorizontal_bias="0.321"
         app:layout_constraintStart_toEndOf="@+id/textView8"
         app:layout_constraintWidth_percent="0.7" />
 

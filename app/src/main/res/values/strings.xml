@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Groopl</string>
+    <string name="kakao_app_key">c3e73128ee761cc7b05b09c7aa5f4cb0</string>
 </resources>
